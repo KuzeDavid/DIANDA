@@ -1,9 +1,10 @@
 @page "/HorarioyMateriales"
 
+
 <div class="d-flex flex-column justify-content-center align-items-center" style="height: 70vh;">
 
     <div class="text-center mb-4">
-        <h1>Te recomendamos</h1>
+        <RadzenText TextStyle="TextStyle.H3" Style="color: #ffffff;">Te recomendamos</RadzenText>
     </div>
     
     <div class="d-grid gap-2 col-6 mx-auto mt-1" >
@@ -75,10 +76,8 @@
                     <button type="button" class="btn-close" aria-label="Close" @onclick="HideModalMateriales"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="linkInput" class="form-label">Ingresa el enlace</label>
-                        <input type="text" class="form-control" id="linkInput" placeholder="https://ejemplo.com">
-                    </div>
+                    <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">Default TextBox</RadzenText>
+                    <RadzenTextBox Change=@(args => OnChange(args, "TextBox")) class="w-100" aria-label="Default TextBox" />
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" @onclick="HideModalMateriales">Close</button>
@@ -91,10 +90,18 @@
 <!-- Capa de fondo oscuro -->
 <div class="modal-backdrop" style="display: @modalDisplayMateriales"></div>
 
+
+
 @code {
     private string modalDisplayHorario = "none";
     private string modalDisplayMateriales = "none";
 
+    string value;
+
+    void OnChange(string value, string name)
+    {
+        
+    }
 
     private void ShowModalHorario()
     {
