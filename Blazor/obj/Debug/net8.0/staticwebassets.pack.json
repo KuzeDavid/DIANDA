@@ -1,47 +1,47 @@
 {
   "Files": [
     {
-      "Id": "E:\\DIANDA\\DIANDA\\blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "E:\\DIANDA\\blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "E:\\DIANDA\\DIANDA\\blazor\\obj\\Debug\\net8.0\\compressed\\waqp1noqn8.gz",
+      "Id": "E:\\DIANDA\\blazor\\obj\\Debug\\net8.0\\compressed\\waqp1noqn8.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "E:\\DIANDA\\DIANDA\\blazor\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prueba Blazor 2.styles.css",
+      "Id": "E:\\DIANDA\\blazor\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prueba Blazor 2.styles.css",
       "PackagePath": "staticwebassets\\Prueba Blazor 2.styles.css"
     },
     {
-      "Id": "E:\\DIANDA\\DIANDA\\blazor\\wwwroot\\css\\app.css",
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "E:\\DIANDA\\DIANDA\\blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\DIANDA\\DIANDA\\blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\DIANDA\\DIANDA\\blazor\\wwwroot\\favicon.png",
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "E:\\DIANDA\\DIANDA\\blazor\\wwwroot\\icon-192.png",
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "E:\\DIANDA\\DIANDA\\blazor\\wwwroot\\images\\robot.png",
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\robot.png",
       "PackagePath": "staticwebassets\\images\\robot.png"
     },
     {
-      "Id": "E:\\DIANDA\\DIANDA\\blazor\\wwwroot\\index.html",
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "E:\\DIANDA\\DIANDA\\blazor\\wwwroot\\sample-data\\weather.json",
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
