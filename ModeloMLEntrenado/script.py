@@ -1,5 +1,6 @@
 ############## PREPROCESAMIENTO DE DATOS ##################
 import pandas as pd
+import joblib
 
 data = pd.read_excel("dataset.xlsx") #cargamos el dataset
 data.dropna(inplace=True) #eliminar filas que contengan valores nulos (inplace = no crear copia)
@@ -7,6 +8,8 @@ data.dropna(inplace=True) #eliminar filas que contengan valores nulos (inplace =
 from sklearn.preprocessing import LabelEncoder #codificar etiquetas categoricas en valores numericos
 label_encoder = LabelEncoder() #instancia de labelEncoder
 data["tipo_encoded"] = label_encoder.fit_transform(data["Tipo"]) #visual, auditivo y cinestesico ahora son 0, 1 y 2
+print(label_encoder.classes_)
+print(data["tipo_encoded"])
 
 #importar funciones de NLTK para el procesamiento de lenguaje natural
 from nltk.tokenize import word_tokenize #divir texto en palabras o tokens
@@ -27,7 +30,7 @@ data["Sentencia"] = data["Sentencia"].apply(preprocess_text) #aplicando la funci
 
 ############## SELECCION DE CARACTERISTICAS ##################
 from sklearn.feature_extraction.text import TfidfVectorizer #transformar texto en representaciones numericas utilizando TF-IDF
-tfidf_vectorizer = TfidfVectorizer(max_features=1000) #instancia TF-IDF limitado a 1000 caracteristicas (para mejorar eficiencia)
+tfidf_vectorizer = TfidfVectorizer() #instancia TF-IDF limitado a 1000 caracteristicas (para mejorar eficiencia)
 X = tfidf_vectorizer.fit_transform(data["Sentencia"]) #representacion numerica de las descripciones (matriz)
 
 
@@ -53,4 +56,11 @@ y_pred = clasificador.predict(X_test)
 print("Exactitud:", accuracy_score(y_test, y_pred))
 print("Reporte de clasificación:\n", classification_report(y_test, y_pred))
 print("Matriz de confusión:\n", confusion_matrix(y_test, y_pred))
+
+
+joblib.dump(clasificador, 'clasificador_entrenado.pkl')
+# Guardar el vectorizador TF-IDF
+joblib.dump(tfidf_vectorizer, 'tfidf_vectorizer.pkl')
+
+
 

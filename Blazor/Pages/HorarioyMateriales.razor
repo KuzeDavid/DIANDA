@@ -1,0 +1,121 @@
+@page "/HorarioyMateriales"
+
+<div class="d-flex flex-column justify-content-center align-items-center" style="height: 70vh;">
+
+    <div class="text-center mb-4">
+        <h1>Te recomendamos</h1>
+    </div>
+    
+    <div class="d-grid gap-2 col-6 mx-auto mt-1" >
+        <button class="btn btn-primary" type="wbutton" @onclick="ShowModalHorario">Registrar Horario</button>
+    </div>
+
+    <div class="d-grid gap-2 col-6 mx-auto mt-4">
+        <button class="btn btn-primary" type="wbutton" @onclick="ShowModalMateriales">Registrar Materiales</button>
+    </div>
+
+</div>
+
+<style>
+    body{
+        background-color: #2d3250;
+    }
+    .fondodepantalla {
+        background-color: #2d3250;
+    }
+    .contenedor {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px; /* Ajusta el valor según el grado de redondeo que desees */
+    background-color: #424769; /* Color de fondo del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .centered-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+</style>
+
+                <!-- HORARIOS -->
+<!-- Modal de horario-->
+<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplayHorario">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal horarios</h5>
+                    <button type="button" class="btn-close" aria-label="Close" @onclick="HideModalHorario"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 custom-file">
+                        <label for="formFile" class="form-label">Cargue su archivo de horario</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="HideModalHorario">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Capa de fondo oscuro -->
+<div class="modal-backdrop" style="display: @modalDisplayHorario"></div>
+
+
+<!-- Modal de Materiales-->
+<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplayMateriales">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal materiales</h5>
+                    <button type="button" class="btn-close" aria-label="Close" @onclick="HideModalMateriales"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="linkInput" class="form-label">Ingresa el enlace</label>
+                        <input type="text" class="form-control" id="linkInput" placeholder="https://ejemplo.com">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="HideModalMateriales">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Capa de fondo oscuro -->
+<div class="modal-backdrop" style="display: @modalDisplayMateriales"></div>
+
+@code {
+    private string modalDisplayHorario = "none";
+    private string modalDisplayMateriales = "none";
+
+
+    private void ShowModalHorario()
+    {
+        modalDisplayHorario = "block";
+    }
+    private void HideModalHorario()
+    {
+        modalDisplayHorario = "none";
+    }
+
+    private void ShowModalMateriales()
+    {
+        modalDisplayMateriales = "block";
+    }
+    private void HideModalMateriales()
+    {
+        modalDisplayMateriales = "none";
+    }
+
+    private void PreventModalClose()
+{
+    // No hacemos nada, solo evitamos que el modal se cierre al hacer clic dentro de él
+}
+}
