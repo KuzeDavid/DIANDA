@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OLFl6uRDWlB7H0KKKYbqbU0F4HJt0JwSuED2nnWsKPW6zV6N4oF4CJ+13EfqHDySgVwdbotE/19ISIMd2D0ylw==",
+  "dgSpecHash": "7kIz2Qh5KnGmMGH8O8gyyRUn2Jr+5sRNIwoVr6dtttXJMvOUqDd6FzOqhEVcVKZfJOHp3gycU5g9vZjOT7bP0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luisa\\OneDrive\\Escritorio\\Blazor\\Prueba Blazor 2.csproj",
+  "projectFilePath": "E:\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luisa\\.nuget\\packages\\dartsassbuilder\\1.0.0\\dartsassbuilder.1.0.0.nupkg.sha512",
     "C:\\Users\\luisa\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.2\\microsoft.aspnetcore.authorization.8.0.2.nupkg.sha512",

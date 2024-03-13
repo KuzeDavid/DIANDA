@@ -2326,11 +2326,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luisa\\OneDrive\\Escritorio\\Blazor\\Prueba Blazor 2.csproj",
+      "projectUniqueName": "E:\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
       "projectName": "Prueba Blazor 2",
-      "projectPath": "C:\\Users\\luisa\\OneDrive\\Escritorio\\Blazor\\Prueba Blazor 2.csproj",
+      "projectPath": "E:\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
       "packagesPath": "C:\\Users\\luisa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luisa\\OneDrive\\Escritorio\\Blazor\\obj\\",
+      "outputPath": "E:\\DIANDA\\DIANDA\\Blazor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\luisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
