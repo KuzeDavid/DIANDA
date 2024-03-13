@@ -14,6 +14,30 @@
     </RadzenStack>
 </RadzenCard>
 
+<RadzenRow Gap="1rem">
+    <RadzenColumn Size="1">
+        <RadzenIcon Icon="help_outline" IconColor="#ffb17a;"/>
+    </RadzenColumn>
+    <RadzenColumn>
+        <RadzenText TextStyle="TextStyle.Button" Style="color: #ffffff;">Responde a las preguntas con sinceridad y pensando en tus propias experiencias.</RadzenText>
+    </RadzenColumn>
+</RadzenRow>
+<RadzenRow Gap="1rem">
+    <RadzenColumn Size="1">
+        <RadzenIcon Icon="help_outline" IconColor="#ffb17a;"/>
+    </RadzenColumn>
+    <RadzenColumn>
+        <RadzenText TextStyle="TextStyle.Button" Style="color: #ffffff;">No hay respuestas "correctas" o "incorrectas".</RadzenText>
+    </RadzenColumn>
+</RadzenRow>
+<RadzenRow Gap="1rem" Style="margin-bottom: 35px;">
+    <RadzenColumn Size="1">
+        <RadzenIcon Icon="help_outline" IconColor="#ffb17a;"/>
+    </RadzenColumn>
+    <RadzenColumn>
+        <RadzenText TextStyle="TextStyle.Button" Style="color: #ffffff;">Cuanto más detalladas sean tus respuestas, mejor podrá el modelo de aprendizaje automático determinar tu estilo de aprendizaje.</RadzenText>
+    </RadzenColumn>
+</RadzenRow>
 
 <style>
     body{
@@ -42,7 +66,7 @@
         {
             <EditForm Model="@pregunta">
                 <RadzenCard Style="margin-bottom: 20px;">
-                    <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3" Style="text-align: left;">@pregunta.Texto</RadzenText>
+                    <RadzenText TextStyle="TextStyle.DisplayH5" Style="text-align: left;">@pregunta.Texto</RadzenText>
                     <RadzenRow Gap="1rem">
                         <RadzenColumn Size="1" class="centered-column">
                             <RadzenIcon Icon="bookmark" IconColor="#ffb17a;"/>
