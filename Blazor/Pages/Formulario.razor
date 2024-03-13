@@ -1,0 +1,121 @@
+﻿@page "/formulario"
+@inject HttpClient HttpClient
+@inject NotificationService NotificationService
+
+<PageTitle>Formulario</PageTitle>
+
+<RadzenCard Variant="Variant.Text" Class="rz-my-12 rz-mx-auto" Style="max-width: 650px">
+    <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+        <RadzenImage src="images/robot.png" Style="width: 100px; height: 100px;" />
+        <RadzenStack Gap="0">
+            <RadzenText TextStyle="TextStyle.H3" Style="color: #ffffff;">Hola! Bienvenido</RadzenText>
+            <RadzenText TextStyle="TextStyle.H6" Style="color: #ffffff;"><b>Vamos a determinar tu estilo de aprendizaje, tómate tu tiempo para contestar las siguientes preguntas</b></RadzenText>
+        </RadzenStack>
+    </RadzenStack>
+</RadzenCard>
+
+
+<style>
+    body{
+        background-color: #2d3250;
+    }
+    .fondodepantalla {
+        background-color: #2d3250;
+    }
+    .contenedor {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px; /* Ajusta el valor según el grado de redondeo que desees */
+    background-color: #424769; /* Color de fondo del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .centered-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+</style>
+
+<div class="fondodepantalla">
+    <div class="contenedor">
+        @foreach (var pregunta in preguntas)
+        {
+            <EditForm Model="@pregunta">
+                <RadzenCard Style="margin-bottom: 20px;">
+                    <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3" Style="text-align: left;">@pregunta.Texto</RadzenText>
+                    <RadzenRow Gap="1rem">
+                        <RadzenColumn Size="1" class="centered-column">
+                            <RadzenIcon Icon="bookmark" IconColor="#ffb17a;"/>
+                        </RadzenColumn>
+                        <RadzenColumn>
+                            <RadzenTextArea @bind-Value="@pregunta.Respuesta" name="@pregunta.Nombre" Placeholder="Enter here..." class="w-100" aria-label="TextArea with placeholder" />
+                        </RadzenColumn>
+                    </RadzenRow>
+                </RadzenCard>
+            </EditForm>
+        }
+
+        <RadzenButton Click="@((args) => OnClick("Evaluaremos tus respuestas"))" Text="Enviar" Icon="check_circle"
+                      Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
+    </div>
+</div>
+
+            
+
+@code {
+
+    private async void OnClick(string text)
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Warning, Summary = "Listo!", Detail = text });
+
+        await enviarRespuestas();
+    }
+
+    public class Pregunta
+    {
+        public string? Nombre { get; set; }
+        public string? Texto { get; set; }
+        public string? Respuesta { get; set; }
+
+    }
+
+    public List<Pregunta> preguntas = new List<Pregunta>()
+    {
+        new Pregunta() { Nombre = "pregunta-uno", Texto = "1. Cuando necesitas aprender algo nuevo, ¿cómo prefieres hacerlo?" },
+        new Pregunta() { Nombre = "pregunta-dos", Texto = "2. ¿Qué te ayuda a recordar mejor la información?" },
+        new Pregunta() { Nombre = "pregunta-tres", Texto = "3. ¿Cómo te describes a ti mismo como estudiante?" },
+        new Pregunta() { Nombre = "pregunta-cuatro", Texto = "4. ¿Qué tipo de actividades disfrutas más en clase?" },
+        new Pregunta() { Nombre = "pregunta-cinco", Texto = "5. ¿Qué te distrae más fácilmente al estudiar?" },
+        new Pregunta() { Nombre = "pregunta-seis", Texto = "6. ¿Cómo tomas apuntes en clase?" },
+        new Pregunta() { Nombre = "pregunta-siete", Texto = "7. ¿Qué recursos utilizas con mayor frecuencia para aprender?" },
+        new Pregunta() { Nombre = "pregunta-ocho", Texto = "8. Si tuvieras que explicar un tema a alguien, ¿cómo lo harías?" },
+        new Pregunta() { Nombre = "pregunta-nueve", Texto = "9. ¿Qué te parece más difícil al aprender algo nuevo?" },
+        new Pregunta() { Nombre = "pregunta-diez", Texto = "10. ¿Qué estrategias utilizas para superar las dificultades al aprender?" }
+    };
+
+    private async Task enviarRespuestas()
+    {
+        // Crear un diccionario para almacenar las respuestas
+        Dictionary<string, string> respuestas = new Dictionary<string, string>();
+
+        // Llenar el diccionario con los datos del formulario
+        foreach (var pregunta in preguntas)
+        {
+            respuestas.Add(pregunta.Nombre, pregunta.Respuesta);
+        }
+
+        // Enviar las respuestas al servidor Flask en Python
+        var response = await HttpClient.PostAsJsonAsync("http://127.0.0.1:5000/", respuestas);
+        
+        if (response.IsSuccessStatusCode)
+        {
+            // Manejar el éxito de la solicitud
+        }
+        else
+        {
+            // Manejar el error de la solicitud
+        }
+    }
+
+}
+
