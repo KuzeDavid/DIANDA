@@ -5196,6 +5196,7 @@ E:\DIANDA\blazor\obj\Debug\net8.0\Prueba Blazor 2.dll
 E:\DIANDA\blazor\obj\Debug\net8.0\refint\Prueba Blazor 2.dll
 E:\DIANDA\blazor\obj\Debug\net8.0\Prueba Blazor 2.pdb
 E:\DIANDA\blazor\obj\Debug\net8.0\ref\Prueba Blazor 2.dll
+<<<<<<< HEAD
 C:\Users\pains\Desktop\TT\DIANDA\Blazor\bin\Debug\net8.0\wwwroot\_framework\blazor.webassembly.js
 C:\Users\pains\Desktop\TT\DIANDA\Blazor\bin\Debug\net8.0\wwwroot\_framework\dotnet.js
 C:\Users\pains\Desktop\TT\DIANDA\Blazor\bin\Debug\net8.0\wwwroot\_framework\dotnet.js.map
@@ -7486,3 +7487,5 @@ C:\Users\Kuze\Desktop\TT2\DIANDA\DIANDA\Blazor\obj\Debug\net8.0\blazor.boot.json
 C:\Users\Kuze\Desktop\TT2\DIANDA\DIANDA\Blazor\obj\Debug\net8.0\Prueba Blazor 2.dll
 C:\Users\Kuze\Desktop\TT2\DIANDA\DIANDA\Blazor\obj\Debug\net8.0\refint\Prueba Blazor 2.dll
 C:\Users\Kuze\Desktop\TT2\DIANDA\DIANDA\Blazor\obj\Debug\net8.0\Prueba Blazor 2.pdb
+=======
+>>>>>>> parent of 9f0e112 (Mas modificaciones de horarios y perfil)
