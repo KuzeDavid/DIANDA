@@ -33,6 +33,18 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\persona1.png",
+      "PackagePath": "staticwebassets\\images\\persona1.png"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\persona2.png",
+      "PackagePath": "staticwebassets\\images\\persona2.png"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\persona3.png",
+      "PackagePath": "staticwebassets\\images\\persona3.png"
+    },
+    {
       "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\profesor.png",
       "PackagePath": "staticwebassets\\images\\profesor.png"
     },
