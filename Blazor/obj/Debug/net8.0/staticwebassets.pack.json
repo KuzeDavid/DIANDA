@@ -33,11 +33,27 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\images\\gato.jpg",
       "PackagePath": "staticwebassets\\images\\gato.jpg"
     },
     {
       "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\images\\profesor.png",
+=======
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\persona1.png",
+      "PackagePath": "staticwebassets\\images\\persona1.png"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\persona2.png",
+      "PackagePath": "staticwebassets\\images\\persona2.png"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\persona3.png",
+      "PackagePath": "staticwebassets\\images\\persona3.png"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\profesor.png",
+>>>>>>> 3ad9b948b3331e6cc2fc4113227a13200a95459c
       "PackagePath": "staticwebassets\\images\\profesor.png"
     },
     {

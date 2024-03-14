@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "0OGuvNNamskF+D2RXfb7uKE7+vg4f7x86Duc2sLsNUQ=",
+=======
+  "Hash": "0VdeHUrrhQptc5YMUNNL+oOsHwUCBdnumWB48fbrv1Q=",
+>>>>>>> 3ad9b948b3331e6cc2fc4113227a13200a95459c
   "Source": "Prueba Blazor 2",
   "BasePath": "/",
   "Mode": "Root",
@@ -8909,7 +8913,68 @@
       "OriginalItemSpec": "wwwroot\\icon-192.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\images\\gato.jpg",
+=======
+      "Identity": "E:\\DIANDA\\blazor\\wwwroot\\images\\persona1.png",
+      "SourceId": "Prueba Blazor 2",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DIANDA\\blazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/persona1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\persona1.png"
+    },
+    {
+      "Identity": "E:\\DIANDA\\blazor\\wwwroot\\images\\persona2.png",
+      "SourceId": "Prueba Blazor 2",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DIANDA\\blazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/persona2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\persona2.png"
+    },
+    {
+      "Identity": "E:\\DIANDA\\blazor\\wwwroot\\images\\persona3.png",
+      "SourceId": "Prueba Blazor 2",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DIANDA\\blazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/persona3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\persona3.png"
+    },
+    {
+      "Identity": "E:\\DIANDA\\blazor\\wwwroot\\images\\profesor.png",
+>>>>>>> 3ad9b948b3331e6cc2fc4113227a13200a95459c
       "SourceId": "Prueba Blazor 2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\",
