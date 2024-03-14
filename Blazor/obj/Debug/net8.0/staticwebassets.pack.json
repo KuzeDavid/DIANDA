@@ -1,0 +1,133 @@
+{
+  "Files": [
+    {
+<<<<<<< HEAD
+      "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\obj\\Debug\\net8.0\\compressed\\7qv4vroeys.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prueba Blazor 2.styles.css",
+      "PackagePath": "staticwebassets\\Prueba Blazor 2.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+<<<<<<< HEAD
+      "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\images\\gato.jpg",
+      "PackagePath": "staticwebassets\\images\\gato.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\images\\profesor.png",
+=======
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\persona1.png",
+      "PackagePath": "staticwebassets\\images\\persona1.png"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\persona2.png",
+      "PackagePath": "staticwebassets\\images\\persona2.png"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\persona3.png",
+      "PackagePath": "staticwebassets\\images\\persona3.png"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\profesor.png",
+>>>>>>> 3ad9b948b3331e6cc2fc4113227a13200a95459c
+      "PackagePath": "staticwebassets\\images\\profesor.png"
+    },
+    {
+      "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\images\\robot.png",
+      "PackagePath": "staticwebassets\\images\\robot.png"
+    },
+    {
+      "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\wwwroot\\sample-data\\weather.json",
+=======
+      "Id": "E:\\DIANDA\\blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\obj\\Debug\\net8.0\\compressed\\waqp1noqn8.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prueba Blazor 2.styles.css",
+      "PackagePath": "staticwebassets\\Prueba Blazor 2.styles.css"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\images\\robot.png",
+      "PackagePath": "staticwebassets\\images\\robot.png"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "E:\\DIANDA\\blazor\\wwwroot\\sample-data\\weather.json",
+>>>>>>> parent of 9f0e112 (Mas modificaciones de horarios y perfil)
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Prueba Blazor 2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Prueba Blazor 2.props",
+      "PackagePath": "build\\Prueba Blazor 2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Prueba Blazor 2.props",
+      "PackagePath": "buildMultiTargeting\\Prueba Blazor 2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Prueba Blazor 2.props",
+      "PackagePath": "buildTransitive\\Prueba Blazor 2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
