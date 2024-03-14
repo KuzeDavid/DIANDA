@@ -2321,19 +2321,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luisa\\.nuget\\packages\\": {}
+    "C:\\Users\\Kuze\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DIANDA\\blazor\\Prueba Blazor 2.csproj",
+      "projectUniqueName": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\Prueba Blazor 2.csproj",
       "projectName": "Prueba Blazor 2",
-      "projectPath": "E:\\DIANDA\\blazor\\Prueba Blazor 2.csproj",
-      "packagesPath": "C:\\Users\\luisa\\.nuget\\packages\\",
-      "outputPath": "E:\\DIANDA\\blazor\\obj\\",
+      "projectPath": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\Prueba Blazor 2.csproj",
+      "packagesPath": "C:\\Users\\Kuze\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA-1\\Blazor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\luisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kuze\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2412,7 +2412,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
@@ -2420,13 +2420,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file E:\\DIANDA\\blazor\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
