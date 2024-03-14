@@ -8,11 +8,11 @@
     </div>
     
     <div class="d-grid gap-2 col-6 mx-auto mt-1" >
-        <button class="btn btn-primary" type="wbutton" @onclick="ShowModalHorario">Registrar Horario</button>
+        <button Style="background-color: #ffb17a; color: #ffffff; font-size: 18px; font-family: 'Roboto'" type="wbutton" @onclick="ShowModalHorario">Registrar Horario</button>
     </div>
 
     <div class="d-grid gap-2 col-6 mx-auto mt-4">
-        <button class="btn btn-primary" type="wbutton" @onclick="ShowModalMateriales">Registrar Materiales</button>
+        <button Style="background-color: #ffb17a; color: #ffffff; font-size: 18px; font-family: 'Roboto'" type="wbutton" @onclick="ShowModalMateriales">Registrar Materiales</button>
     </div>
 
 </div>
@@ -45,18 +45,18 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal horarios</h5>
+                    <h5 class="modal-title">Registrar Horario</h5>
                     <button type="button" class="btn-close" aria-label="Close" @onclick="HideModalHorario"></button>
                 </div>
                 <div class="modal-body">
                     <div class="mb-3 custom-file">
-                        <label for="formFile" class="form-label">Cargue su archivo de horario</label>
+                        <label for="formFile" class="form-label">Cargue Horario</label>
                         <input class="form-control" type="file" id="formFile">
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" @onclick="HideModalHorario">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" Style="background-color: #ffb17a; color: #ffffff;">Save changes</button>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal materiales</h5>
+                    <h5 class="modal-title">Registrar Materiales</h5>
                     <button type="button" class="btn-close" aria-label="Close" @onclick="HideModalMateriales"></button>
                 </div>
                 <div class="modal-body">
@@ -81,7 +81,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" @onclick="HideModalMateriales">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" Style="background-color: #ffb17a; color: #ffffff;">Save changes</button>
                 </div>
             </div>
         </div>
@@ -90,18 +90,10 @@
 <!-- Capa de fondo oscuro -->
 <div class="modal-backdrop" style="display: @modalDisplayMateriales"></div>
 
-
-
 @code {
     private string modalDisplayHorario = "none";
     private string modalDisplayMateriales = "none";
 
-    string value;
-
-    void OnChange(string value, string name)
-    {
-        
-    }
 
     private void ShowModalHorario()
     {

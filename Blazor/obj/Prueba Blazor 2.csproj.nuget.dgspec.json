@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kuze\\Desktop\\school\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj": {}
+    "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kuze\\Desktop\\school\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj": {
+    "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kuze\\Desktop\\school\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
+        "projectUniqueName": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
         "projectName": "Prueba Blazor 2",
-        "projectPath": "C:\\Users\\Kuze\\Desktop\\school\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
+        "projectPath": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
         "packagesPath": "C:\\Users\\Kuze\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kuze\\Desktop\\school\\DIANDA\\DIANDA\\Blazor\\obj\\",
+        "outputPath": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kuze\\AppData\\Roaming\\NuGet\\NuGet.Config",

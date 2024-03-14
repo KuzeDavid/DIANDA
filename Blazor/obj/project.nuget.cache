@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kv6H0/0evLRJex/rKPxNVIYiMvy/zoFlSwsL7tyWZ4UaH8/6Gyc4ZFEyLPUjUn2l89CEhFl+tTmgDppL+7/zXQ==",
+  "dgSpecHash": "DwYNcmk+2EbANLmY91IhjiN1oqpIWPS/CNJYDdrTabflNFZPdhqLxVOOnL40lOhAMW205deXs75oSzGCORE1kw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kuze\\Desktop\\school\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
+  "projectFilePath": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kuze\\.nuget\\packages\\dartsassbuilder\\1.0.0\\dartsassbuilder.1.0.0.nupkg.sha512",
     "C:\\Users\\Kuze\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.2\\microsoft.aspnetcore.authorization.8.0.2.nupkg.sha512",
@@ -38,5 +38,12 @@
     "C:\\Users\\Kuze\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\Kuze\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.2\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
