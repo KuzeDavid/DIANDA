@@ -1,10 +1,13 @@
 @page "/Login"
+@inject NavigationManager NavigationManager
+
+
 <style>
     body{
         background-color: #2d3250;
     }
-    .fondodepantalla {
-        background-color: #2d3250;
+    .fondo {
+        background-color: #ffffff;
     }
     .contenedor {
     text-align: center;
@@ -35,7 +38,7 @@ Despues se pone al iniciar jsjs
                         </RadzenCard>
                     </RadzenColumn>
                     <RadzenColumn Size="12" SizeMD="6">
-                        <RadzenCard class="rz-my-12 rz-mx-auto rz-p-4 rz-p-md-12" style="max-width: 600px;">
+                        <RadzenCard class="rz-my-12 rz-mx-auto rz-p-4 rz-p-md-12 fondo" style="max-width: 600px;">
                             <RadzenTemplateForm Data=@("LoginWithDefaultValues")>
                                 <RadzenLogin AllowRegister="true" AllowResetPassword="true" Username=@userName Password=@password
                                             AllowRememberMe="false" RememberMe="@rememberMe"
@@ -65,7 +68,7 @@ Despues se pone al iniciar jsjs
 
     void OnRegister(string name)
     {
-       
+       NavigationManager.NavigateTo("/Registro");
     }
 
     void OnResetPassword(string value, string name)
