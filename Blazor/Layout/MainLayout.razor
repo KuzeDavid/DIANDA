@@ -1,16 +1,41 @@
 ﻿@inherits LayoutComponentBase
 
+
 <RadzenComponents/>
 
+@if (!IsLoginPage)
+{
+    <div class="page">
+        <div class="sidebar @((IsLoginPage) ? "hidden-nav-menu" : "")">
+            <NavMenu />
+        </div>
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
+        <main>
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
     </div>
+}
+else
+{
+    <div class="page">
+        <main>
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
+    </div>
+}
 
-    <main>
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+
+@code {
+    [Parameter]
+    public bool IsLoginPage { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        Console.WriteLine($"IsLoginPage: {IsLoginPage}");
+    }
+}
