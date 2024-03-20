@@ -1,4 +1,4 @@
-@page "/"
+@page "/Login"
 @inherits LayoutComponentBase
 @inject NavigationManager NavigationManager
 @using Microsoft.AspNetCore.Components.Forms
@@ -75,8 +75,7 @@
 </div>
 
 @code {
-    [Parameter]
-    public bool IsLoginPage { get; set; } = true;
+    // Método para inicializar la variable booleana al iniciar la página
     
     public class Logined
     {
@@ -86,26 +85,22 @@
 }
     Logined login = new Logined();
 
+    private bool isAuthenticated = false;
     private async Task LoginUser()
     {
-        
         if (login.Username == "admin" && login.Password == "admin")
-        {
-            
+        {   
+            isAuthenticated = true; // Establecer como autenticado
             NavigationManager.NavigateTo("/Perfil");
         }
         else
-        {
-            
+        {       
             Console.WriteLine("Credenciales inválidas. Por favor, inténtalo de nuevo.");
         }
     }
-
     private async Task ForgotPassword()
     {
         
     }
-
-   
 }
 

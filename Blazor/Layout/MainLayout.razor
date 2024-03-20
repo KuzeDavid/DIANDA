@@ -1,41 +1,26 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
 
-
-<RadzenComponents/>
-
-@if (!IsLoginPage)
-{
-    <div class="page">
-        <div class="sidebar @((IsLoginPage) ? "hidden-nav-menu" : "")">
+<div class="page">
+    @if (!EsPaginaLogin(NavigationManager.Uri))
+    {
+        <div class="sidebar">
             <NavMenu />
         </div>
-
-        <main>
-            <article class="content px-4">
-                @Body
-            </article>
-        </main>
-    </div>
-}
-else
-{
-    <div class="page">
-        <main>
-            <article class="content px-4">
-                @Body
-            </article>
-        </main>
-    </div>
-}
-
+    }
+    
+    <main>
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
 
 @code {
-    [Parameter]
-    public bool IsLoginPage { get; set; }
-
-    protected override void OnParametersSet()
+    private bool EsPaginaLogin(string uri)
     {
-        base.OnParametersSet();
-        Console.WriteLine($"IsLoginPage: {IsLoginPage}");
+        // Comprueba si la URL actual corresponde a la página de login
+        return uri.Contains("/Registro") || uri.Contains("/resultado") || uri.Contains("/Login");
     }
 }
+
