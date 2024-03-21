@@ -42,12 +42,15 @@
     justify-content: center;
     align-items: center;
     }
+    .modal-dialog-centered.custom-modal {
+        margin-left: 250px; /* Ajusta este valor según el ancho de tu barra de navegación */
+    }
 </style>
 
                 <!-- HORARIOS -->
 <!-- Modal de horario-->
 <div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplayHorario">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered custom-modal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
