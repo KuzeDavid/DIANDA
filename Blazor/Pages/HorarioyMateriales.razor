@@ -42,29 +42,37 @@
     justify-content: center;
     align-items: center;
     }
-    .modal-dialog-centered.custom-modal {
+    <!--.modal-dialog-centered.custom-modal {
         margin-left: 250px; /* Ajusta este valor según el ancho de tu barra de navegación */
-    }
+    }-->
 </style>
 
                 <!-- HORARIOS -->
 <!-- Modal de horario-->
-<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplayHorario">
-    <div class="modal-dialog modal-dialog-centered custom-modal">
+<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplay">
+    <div class="modal-dialog modal-dialog-centered"> <!--custom-modal-->
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Registrar Horario</h5>
-                    <button type="button" class="btn-close" aria-label="Close" @onclick="HideModalHorario"></button>
+                    <h5 class="modal-title">Registre @NomModal</h5>
+                    <button type="button" class="btn-close" aria-label="Close" @onclick="HideModal"></button>
                 </div>
                 <div class="modal-body">
                     <div class="mb-3 custom-file">
-                        <label for="formFile" class="form-label">Cargue Horario</label>
-                        <input class="form-control" type="file" id="formFile">
+                        @if (NomModal == "horario")
+                        {
+                            <label for="formFile" class="form-label">Cargue su @NomModal</label>
+                            <input class="form-control" type="file" id="formFile">
+                        }
+                        else if (NomModal == "materiales")
+                        {
+                            <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">Cargue su @NomModal</RadzenText>
+                            <RadzenTextBox Change=@(args => OnChange(args, "TextBox")) class="w-100" aria-label="Default TextBox" />
+                        }
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" @onclick="HideModalHorario">Close</button>
+                    <button type="button" class="btn btn-secondary" @onclick="HideModal">Close</button>
                     <button type="button" Style="background-color: #ffb17a; color: #ffffff;">Save changes</button>
                 </div>
             </div>
@@ -72,38 +80,14 @@
     </div>
 </div>
 <!-- Capa de fondo oscuro -->
-<div class="modal-backdrop" style="display: @modalDisplayHorario"></div>
-
-
-<!-- Modal de Materiales-->
-<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplayMateriales">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Registrar Materiales</h5>
-                    <button type="button" class="btn-close" aria-label="Close" @onclick="HideModalMateriales"></button>
-                </div>
-                <div class="modal-body">
-                    <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">Cargue Materiales</RadzenText>
-                    <RadzenTextBox Change=@(args => OnChange(args, "TextBox")) class="w-100" aria-label="Default TextBox" />
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" @onclick="HideModalMateriales">Close</button>
-                    <button type="button" Style="background-color: #ffb17a; color: #ffffff;">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Capa de fondo oscuro -->
-<div class="modal-backdrop" style="display: @modalDisplayMateriales"></div>
-
+<div class="modal-backdrop" style="display: @modalDisplay"></div>
 
 
 @code {
-    private string modalDisplayHorario = "none";
+    private string modalDisplay = "none";
     private string modalDisplayMateriales = "none";
+    private string NomModal = "";
+
 
     string value;
 
@@ -112,26 +96,29 @@
         
     }
 
+    
     private void ShowModalHorario()
     {
-        modalDisplayHorario = "block";
+        NomModal = "horario";
+        modalDisplay = "block";
     }
-    private void HideModalHorario()
+    private void HideModal()
     {
-        modalDisplayHorario = "none";
+        modalDisplay = "none";
     }
 
     private void ShowModalMateriales()
     {
-        modalDisplayMateriales = "block";
+        NomModal = "materiales";
+        modalDisplay = "block";
     }
     private void HideModalMateriales()
     {
-        modalDisplayMateriales = "none";
+        modalDisplay = "none";
     }
 
     private void PreventModalClose()
-{
-    // No hacemos nada, solo evitamos que el modal se cierre al hacer clic dentro de él
-}
+    {
+        // No hacemos nada, solo evitamos que el modal se cierre al hacer clic dentro de él
+    }
 }

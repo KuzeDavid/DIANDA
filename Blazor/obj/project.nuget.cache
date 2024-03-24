@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GgTod2sksst+kDZr3ms5OsPRo2hzdRTtOwx4ShnjT1ZyQmRiB83GsA3PN5wT0cRlbopvS7nds7HKZtJwjRDK4g==",
+  "dgSpecHash": "AmanR7Ij23PanbXh9LVLl8lzr1l3LZ49q4HHbOovkjdnfnf6DU2jb5RI2M4xJaeHiqV2r1de2mZuAvDBLS2k5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
+  "projectFilePath": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kuze\\.nuget\\packages\\blazorise\\1.4.1\\blazorise.1.4.1.nupkg.sha512",
     "C:\\Users\\Kuze\\.nuget\\packages\\blazorise.bootstrap\\1.4.1\\blazorise.bootstrap.1.4.1.nupkg.sha512",
