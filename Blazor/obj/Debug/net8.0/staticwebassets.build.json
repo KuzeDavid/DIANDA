@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "faT5KaSEcD8Cc2gQjegiyly8CUQiz9L2W4BQfa6kLlg=",
+  "Hash": "xluXTUk5ds9GB7r12USR0qCA/oNbiB6Pz9LsxNwPJhM=",
   "Source": "Prueba Blazor 2",
   "BasePath": "/",
   "Mode": "Root",
@@ -9895,6 +9895,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\wwwroot\\css\\DiandaStyle.css",
+      "SourceId": "Prueba Blazor 2",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/DiandaStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\DiandaStyle.css"
     },
     {
       "Identity": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\wwwroot\\favicon.png",

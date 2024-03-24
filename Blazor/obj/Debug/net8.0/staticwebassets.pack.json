@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\Prueba Blazor 2.styles.css"
     },
     {
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\wwwroot\\css\\DiandaStyle.css",
+      "PackagePath": "staticwebassets\\css\\DiandaStyle.css"
+    },
+    {
       "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
