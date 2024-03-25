@@ -2,6 +2,10 @@
 @inject HttpClient HttpClient
 @inject NotificationService NotificationService
 
+<head>
+    <link rel="stylesheet" href="css/DiandaStyle.css" />
+</head>
+
 <PageTitle>Formulario</PageTitle>
 
 <RadzenCard Variant="Variant.Text" Class="rz-my-12 rz-mx-auto" Style="max-width: 650px">
@@ -38,27 +42,6 @@
         <RadzenText TextStyle="TextStyle.Button" Style="color: #ffffff;">Cuanto más detalladas sean tus respuestas, mejor podrá el modelo de aprendizaje automático determinar tu estilo de aprendizaje.</RadzenText>
     </RadzenColumn>
 </RadzenRow>
-
-<style>
-    body{
-        background-color: #2d3250;
-    }
-    .fondodepantalla {
-        background-color: #2d3250;
-    }
-    .contenedor {
-    text-align: center;
-    padding: 20px;
-    border-radius: 15px; /* Ajusta el valor según el grado de redondeo que desees */
-    background-color: #424769; /* Color de fondo del contenedor */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .centered-column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-</style>
 
 <div class="fondodepantalla">
     <div class="contenedor">

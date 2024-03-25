@@ -1,16 +1,26 @@
 ﻿@inherits LayoutComponentBase
-
-<RadzenComponents/>
-
+@inject NavigationManager NavigationManager
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
+    @if (!EsPaginaLogin(NavigationManager.Uri))
+    {
+        <div class="sidebar">
+            <NavMenu />
+        </div>
+    }
+    
     <main>
         <article class="content px-4">
             @Body
         </article>
     </main>
 </div>
+
+@code {
+    private bool EsPaginaLogin(string uri)
+    {
+        // Comprueba si la URL actual corresponde a la página de login
+        return uri.Contains("/Registro") || uri.Contains("/RecuperarContra") || uri.Contains("/Login");
+    }
+}
+
