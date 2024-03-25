@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, redirect, url_for, render_template
 import joblib
 import pandas as pd
 from nltk.tokenize import word_tokenize #divir texto en palabras o tokens
@@ -54,14 +54,16 @@ def recibir_respuestas():
         print("La moda de y_pred es:", moda)
         
         if moda == 0:
-            resultado = "auditivo"
+            resultado = "AUDITIVO"
         elif moda == 1:
-            resultado = "kinestesico"
+            resultado = "KINESTÉSICO"
         else:
-            resultado = "visual"
+            resultado = "VISUAL"
 
-        # Devuelve las respuestas en formato JSON
-        return jsonify({"resultado": resultado})
+        print(resultado)
+
+        #######
+        return resultado
     
     
     else:

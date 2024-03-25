@@ -1,20 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "RBL6buBAdkPBhj8Z9VzUkMp0CxBocRrfIqL+hpeOLXccxFfMLwCwu11CbfOCVFj96ASivHYE4zdMcHhvb+T2Sw==",
+  "dgSpecHash": "17pV3uOqCxUNvVXxjl6231iZG6GbrDfls2KiydK6OCFgkTDnfNXZ0CJf5zmhZ/FnMC485sc/zkDulwoBIS58fw==",
   "success": true,
   "projectFilePath": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\Prueba Blazor 2.csproj",
-=======
-<<<<<<< HEAD
-  "dgSpecHash": "GgTod2sksst+kDZr3ms5OsPRo2hzdRTtOwx4ShnjT1ZyQmRiB83GsA3PN5wT0cRlbopvS7nds7HKZtJwjRDK4g==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
-=======
-  "dgSpecHash": "1iV2AU9wmiBYU0IhtE0jVoJ5I3oDMMaKQXSsLiF3/jZtCaUsaFTY5UeFv58kYDv5Xdiz4R9xVGLXYw5FkBW0Sg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\luisa\\Downloads\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
->>>>>>> 959d204ad026e180bf54b469f819d27b2f5e7a3a
->>>>>>> 017aaae953e44659fd7ed7198c4f0f81c335dba0
   "expectedPackageFiles": [
     "C:\\Users\\luisa\\.nuget\\packages\\blazorise\\1.4.1\\blazorise.1.4.1.nupkg.sha512",
     "C:\\Users\\luisa\\.nuget\\packages\\blazorise.bootstrap\\1.4.1\\blazorise.bootstrap.1.4.1.nupkg.sha512",
@@ -135,8 +123,8 @@
     "C:\\Users\\luisa\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\system.security.cryptography.x509certificates.4.3.0.nupkg.sha512",
     "C:\\Users\\luisa\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\luisa\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
-    "C:\\Users\\luisa\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
-    "C:\\Users\\luisa\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
+    "C:\\Users\\luisa\\.nuget\\packages\\system.text.encodings.web\\9.0.0-preview.2.24128.5\\system.text.encodings.web.9.0.0-preview.2.24128.5.nupkg.sha512",
+    "C:\\Users\\luisa\\.nuget\\packages\\system.text.json\\9.0.0-preview.2.24128.5\\system.text.json.9.0.0-preview.2.24128.5.nupkg.sha512",
     "C:\\Users\\luisa\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\luisa\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\luisa\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
