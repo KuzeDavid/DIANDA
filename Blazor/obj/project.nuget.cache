@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1iV2AU9wmiBYU0IhtE0jVoJ5I3oDMMaKQXSsLiF3/jZtCaUsaFTY5UeFv58kYDv5Xdiz4R9xVGLXYw5FkBW0Sg==",
+  "dgSpecHash": "RBL6buBAdkPBhj8Z9VzUkMp0CxBocRrfIqL+hpeOLXccxFfMLwCwu11CbfOCVFj96ASivHYE4zdMcHhvb+T2Sw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luisa\\Downloads\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
+  "projectFilePath": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\Prueba Blazor 2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luisa\\.nuget\\packages\\blazorise\\1.4.1\\blazorise.1.4.1.nupkg.sha512",
     "C:\\Users\\luisa\\.nuget\\packages\\blazorise.bootstrap\\1.4.1\\blazorise.bootstrap.1.4.1.nupkg.sha512",
@@ -135,12 +135,5 @@
     "C:\\Users\\luisa\\.nuget\\packages\\tinymce.blazor\\1.0.4\\tinymce.blazor.1.0.4.nupkg.sha512",
     "C:\\Users\\luisa\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.2\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\luisa\\Downloads\\DIANDA\\Blazor\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

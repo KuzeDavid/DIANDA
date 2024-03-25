@@ -5,6 +5,7 @@ from nltk.tokenize import word_tokenize #divir texto en palabras o tokens
 from nltk.corpus import stopwords #palabras vacias ("el", "la", "y", "en", etc)
 from nltk.stem import PorterStemmer #algoritmo de lematizacion de palabras (lemas)
 from sklearn.feature_extraction.text import TfidfVectorizer
+from statistics import mode
 
 app = Flask(__name__)
 
@@ -48,9 +49,19 @@ def recibir_respuestas():
         clasificador_cargado = joblib.load('clasificador_entrenado.pkl')
         y_pred = clasificador_cargado.predict(X)
         print(y_pred) #recordar que auditivo:0 kinestésico:1 visual:2
+
+        moda = mode(y_pred)
+        print("La moda de y_pred es:", moda)
         
+        if moda == 0:
+            resultado = "auditivo"
+        elif moda == 1:
+            resultado = "kinestesico"
+        else:
+            resultado = "visual"
+
         # Devuelve las respuestas en formato JSON
-        return jsonify({"y_pred": y_pred.tolist()})
+        return jsonify({"resultado": resultado})
     
     
     else:

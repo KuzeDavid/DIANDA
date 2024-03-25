@@ -61,9 +61,10 @@
                 </RadzenCard>
             </EditForm>
         }
-
+        <NavLink class="nav-link" href="Resultado">
         <RadzenButton Click="@((args) => OnClick("Evaluaremos tus respuestas"))" Text="Enviar" Icon="check_circle"
                       Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
+        </NavLink>
     </div>
 </div>
 
@@ -76,6 +77,7 @@
         NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Warning, Summary = "Listo!", Detail = text });
 
         await enviarRespuestas();
+        
     }
 
     public class Pregunta
