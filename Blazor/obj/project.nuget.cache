@@ -1,8 +1,20 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "RBL6buBAdkPBhj8Z9VzUkMp0CxBocRrfIqL+hpeOLXccxFfMLwCwu11CbfOCVFj96ASivHYE4zdMcHhvb+T2Sw==",
   "success": true,
   "projectFilePath": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\Prueba Blazor 2.csproj",
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "GgTod2sksst+kDZr3ms5OsPRo2hzdRTtOwx4ShnjT1ZyQmRiB83GsA3PN5wT0cRlbopvS7nds7HKZtJwjRDK4g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
+=======
+  "dgSpecHash": "1iV2AU9wmiBYU0IhtE0jVoJ5I3oDMMaKQXSsLiF3/jZtCaUsaFTY5UeFv58kYDv5Xdiz4R9xVGLXYw5FkBW0Sg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\luisa\\Downloads\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
+>>>>>>> 959d204ad026e180bf54b469f819d27b2f5e7a3a
+>>>>>>> 017aaae953e44659fd7ed7198c4f0f81c335dba0
   "expectedPackageFiles": [
     "C:\\Users\\luisa\\.nuget\\packages\\blazorise\\1.4.1\\blazorise.1.4.1.nupkg.sha512",
     "C:\\Users\\luisa\\.nuget\\packages\\blazorise.bootstrap\\1.4.1\\blazorise.bootstrap.1.4.1.nupkg.sha512",

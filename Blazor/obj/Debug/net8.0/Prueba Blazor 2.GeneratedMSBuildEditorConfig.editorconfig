@@ -13,12 +13,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Prueba_Blazor_2
 build_property.RootNamespace = Prueba_Blazor_2
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\luisa\Downloads\DIANDA\blazor\
+=======
+build_property.ProjectDir = C:\Users\Kuze\Desktop\TT2\DIANDA\DIANDA\Blazor\
+>>>>>>> 017aaae953e44659fd7ed7198c4f0f81c335dba0
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = C:\Users\luisa\Downloads\DIANDA\blazor
 build_property._RazorSourceGeneratorDebug = 
 
@@ -79,5 +84,67 @@ build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-vh0wjg8u7e
 
 [C:/Users/luisa/Downloads/DIANDA/blazor/Layout/NavMenu.razor]
+=======
+build_property.MSBuildProjectDirectory = C:\Users\Kuze\Desktop\TT2\DIANDA\DIANDA\Blazor
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/Layout/LayoutNoNav.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XExheW91dE5vTmF2LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/Login/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = TG9naW5cTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/Login/RecuContra.razor]
+build_metadata.AdditionalFiles.TargetPath = TG9naW5cUmVjdUNvbnRyYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/Login/Registro.razor]
+build_metadata.AdditionalFiles.TargetPath = TG9naW5cUmVnaXN0cm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/Pages/Formulario.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXVsYXJpby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/Pages/HorarioyMateriales.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9yYXJpb3lNYXRlcmlhbGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/Pages/Perfil.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyZmlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/Pages/Resultado.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdWx0YWRvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vh0wjg8u7e
+
+[C:/Users/Kuze/Desktop/TT2/DIANDA/DIANDA/Blazor/Layout/NavMenu.razor]
+>>>>>>> 017aaae953e44659fd7ed7198c4f0f81c335dba0
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-djmnyrfduu

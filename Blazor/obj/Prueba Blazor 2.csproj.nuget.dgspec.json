@@ -1,7 +1,24 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\Prueba Blazor 2.csproj": {}
+=======
+<<<<<<< HEAD
+    "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
+        "projectName": "Prueba Blazor 2",
+        "projectPath": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
+        "packagesPath": "C:\\Users\\Kuze\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\DIANDA\\Blazor\\obj\\",
+=======
+    "C:\\Users\\luisa\\Downloads\\DIANDA\\Blazor\\Prueba Blazor 2.csproj": {}
+>>>>>>> 017aaae953e44659fd7ed7198c4f0f81c335dba0
   },
   "projects": {
     "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\Prueba Blazor 2.csproj": {
@@ -11,7 +28,12 @@
         "projectName": "Prueba Blazor 2",
         "projectPath": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\Prueba Blazor 2.csproj",
         "packagesPath": "C:\\Users\\luisa\\.nuget\\packages\\",
+<<<<<<< HEAD
         "outputPath": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\obj\\",
+=======
+        "outputPath": "C:\\Users\\luisa\\Downloads\\DIANDA\\Blazor\\obj\\",
+>>>>>>> 959d204ad026e180bf54b469f819d27b2f5e7a3a
+>>>>>>> 017aaae953e44659fd7ed7198c4f0f81c335dba0
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
