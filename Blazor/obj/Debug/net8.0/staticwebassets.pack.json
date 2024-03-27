@@ -1,71 +1,71 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\obj\\Debug\\net8.0\\compressed\\waqp1noqn8.gz",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\obj\\Debug\\net8.0\\compressed\\7qv4vroeys.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prueba Blazor 2.styles.css",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prueba Blazor 2.styles.css",
       "PackagePath": "staticwebassets\\Prueba Blazor 2.styles.css"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\css\\DiandaStyle.css",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\css\\DiandaStyle.css",
       "PackagePath": "staticwebassets\\css\\DiandaStyle.css"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\css\\app.css",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\favicon.png",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\icon-192.png",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\images\\gato.jpg",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\images\\gato.jpg",
       "PackagePath": "staticwebassets\\images\\gato.jpg"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\images\\persona1.png",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\images\\persona1.png",
       "PackagePath": "staticwebassets\\images\\persona1.png"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\images\\persona2.png",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\images\\persona2.png",
       "PackagePath": "staticwebassets\\images\\persona2.png"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\images\\persona3.png",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\images\\persona3.png",
       "PackagePath": "staticwebassets\\images\\persona3.png"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\images\\profesor.png",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\images\\profesor.png",
       "PackagePath": "staticwebassets\\images\\profesor.png"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\images\\robot.png",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\images\\robot.png",
       "PackagePath": "staticwebassets\\images\\robot.png"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\index.html",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\luisa\\Downloads\\DIANDA\\blazor\\wwwroot\\sample-data\\weather.json",
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
