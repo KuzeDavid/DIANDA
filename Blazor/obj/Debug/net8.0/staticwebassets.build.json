@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+O2QuHViWbpG5HOm38yttf7jcsVddWOc7aodGtZHQos=",
+  "Hash": "eAYbpU+sK7aT19otA4lWga6z9nMVlsvvRQhwqIuaJWw=",
   "Source": "Prueba Blazor 2",
   "BasePath": "/",
   "Mode": "Root",
@@ -9971,6 +9971,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\gato.jpg"
+    },
+    {
+      "Identity": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\images\\horario.jpg",
+      "SourceId": "Prueba Blazor 2",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/horario.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\horario.jpg"
     },
     {
       "Identity": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\images\\persona1.png",

@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\images\\gato.jpg"
     },
     {
+      "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\images\\horario.jpg",
+      "PackagePath": "staticwebassets\\images\\horario.jpg"
+    },
+    {
       "Id": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\wwwroot\\images\\persona1.png",
       "PackagePath": "staticwebassets\\images\\persona1.png"
     },
