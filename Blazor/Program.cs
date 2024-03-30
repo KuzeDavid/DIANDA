@@ -15,3 +15,5 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 builder.Services.AddRadzenComponents();
 
 await builder.Build().RunAsync();
+
+builder.Services.AddSingleton<EstadoEstudianteService>();//Servicio local para cambiar entre profesor y estudiante
