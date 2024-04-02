@@ -46,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXVsYXJpby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[c:/Users/Kuze/Desktop/TT2/DIANDA/Blazor/Pages/GestionProfe.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvblByb2ZlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/Kuze/Desktop/TT2/DIANDA/Blazor/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
