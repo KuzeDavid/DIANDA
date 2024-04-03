@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Descargas\\DIANDA\\blazor\\Prueba Blazor 2.csproj": {}
+    "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\Prueba Blazor 2.csproj": {}
   },
   "projects": {
-    "E:\\Descargas\\DIANDA\\blazor\\Prueba Blazor 2.csproj": {
+    "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\Prueba Blazor 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Descargas\\DIANDA\\blazor\\Prueba Blazor 2.csproj",
+        "projectUniqueName": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
         "projectName": "Prueba Blazor 2",
-        "projectPath": "E:\\Descargas\\DIANDA\\blazor\\Prueba Blazor 2.csproj",
-        "packagesPath": "C:\\Users\\luisa\\.nuget\\packages\\",
-        "outputPath": "E:\\Descargas\\DIANDA\\blazor\\obj\\",
+        "projectPath": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
+        "packagesPath": "C:\\Users\\Kuze\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\luisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kuze\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -109,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

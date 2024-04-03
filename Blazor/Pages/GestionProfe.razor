@@ -14,75 +14,79 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <RadzenRow Gap="0" Class="rz-my-12 rz-mx-auto rz-border-radius-6 rz-shadow-10" Style="width: 100%; max-width: 820px; overflow: hidden;">
-                    <RadzenColumn Size="12" SizeMD="6">
-                        <RadzenText TextStyle="TextStyle.H6" Style="color: #ffffff;">Alumnos inscritos</RadzenText>
-                        <div style="width: 400px; height: 440px; overflow-y: scroll; scrollbar-width: none; ">
-                            <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
-                                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
-                                    <RadzenImage src="images/persona1.png" Style="width: 100px; height: 100px;" />
-                                    <RadzenStack Gap="0">
-                                        <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                        <RadzenButton Text="Contactar" Icon="find_in_page"
-                                        Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
-                                    </RadzenStack>
-                                </RadzenStack>
-                            </RadzenCard>
-                            <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
-                                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
-                                    <RadzenImage src="images/persona2.png" Style="width: 100px; height: 100px;" />
-                                    <RadzenStack Gap="0">
-                                        <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                        <RadzenButton Text="Contactar" Icon="find_in_page"
-                                        Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
-                                    </RadzenStack>
-                                </RadzenStack>
-                            </RadzenCard>
-                            <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
-                                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
-                                    <RadzenImage src="images/persona3.png" Style="width: 100px; height: 100px;" />
-                                    <RadzenStack Gap="0">
-                                        <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                        <RadzenButton Text="Contactar" Icon="find_in_page"
-                                        Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
-                                    </RadzenStack>
-                                </RadzenStack>
-                            </RadzenCard>
+                <RadzenRow Gap="0" Class="rz-my-12 rz-mx-auto rz-border-radius-6 rz-shadow-10" Style="width: 100%; max-width: 900px; overflow: hidden;">
+                    <RadzenColumn Size="12" SizeMD="6" >
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <RadzenText TextStyle="TextStyle.H4" Style="color: #ffb17a;">Alumnos inscritos</RadzenText>
+                                <div style="width: 400px; height: 440px; overflow-y: scroll; scrollbar-width: none; ">
+                                    <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
+                                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+                                            <RadzenImage src="images/persona1.png" Style="width: 100px; height: 100px;" />
+                                            <RadzenStack Gap="0">
+                                                <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
+                                                <RadzenButton Text="Contactar" Icon="find_in_page"
+                                                Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" Click="ShowModalHorario"/>
+                                            </RadzenStack>
+                                        </RadzenStack>
+                                    </RadzenCard>
+                                    <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
+                                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+                                            <RadzenImage src="images/persona2.png" Style="width: 100px; height: 100px;" />
+                                            <RadzenStack Gap="0">
+                                                <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
+                                                <RadzenButton Text="Contactar" Icon="find_in_page"
+                                                Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
+                                            </RadzenStack>
+                                        </RadzenStack>
+                                    </RadzenCard>
+                                    <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
+                                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+                                            <RadzenImage src="images/persona3.png" Style="width: 100px; height: 100px;" />
+                                            <RadzenStack Gap="0">
+                                                <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
+                                                <RadzenButton Text="Contactar" Icon="find_in_page"
+                                                Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
+                                            </RadzenStack>
+                                        </RadzenStack>
+                                    </RadzenCard>
+                                </div>
                         </div>
                     </RadzenColumn>
-                    <RadzenColumn Size="12" SizeMD="6">
-                        <RadzenText TextStyle="TextStyle.H6" Style="color: #ffffff;">Solicitud de alumnos</RadzenText>
-                        <div style="width: 400px; height: 440px; overflow-y: scroll; scrollbar-width: none;">
-                            <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
-                                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
-                                    <RadzenImage src="images/persona1.png" Style="width: 100px; height: 100px;" />
-                                    <RadzenStack Gap="0">
-                                        <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                        <RadzenButton Text="Contactar" Icon="find_in_page"
-                                        Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
-                                    </RadzenStack>
-                                </RadzenStack>
-                            </RadzenCard>
-                            <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
-                                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
-                                    <RadzenImage src="images/persona2.png" Style="width: 100px; height: 100px;" />
-                                    <RadzenStack Gap="0">
-                                        <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                        <RadzenButton Text="Contactar" Icon="find_in_page"
-                                        Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
-                                    </RadzenStack>
-                                </RadzenStack>
-                            </RadzenCard>
-                            <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
-                                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
-                                    <RadzenImage src="images/persona3.png" Style="width: 100px; height: 100px;" />
-                                    <RadzenStack Gap="0">
-                                        <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                        <RadzenButton Text="Contactar" Icon="find_in_page"
-                                        Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
-                                    </RadzenStack>
-                                </RadzenStack>
-                            </RadzenCard>
+                    <RadzenColumn Size="12" SizeMD="6" >
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <RadzenText TextStyle="TextStyle.H4" Style="color: #ffb17a;">Solicitud de alumnos</RadzenText>
+                                <div style="width: 400px; height: 440px; overflow-y: scroll; scrollbar-width: none; ">
+                                    <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
+                                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+                                            <RadzenImage src="images/persona1.png" Style="width: 100px; height: 100px;" />
+                                            <RadzenStack Gap="0">
+                                                <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
+                                                <RadzenButton Text="Contactar" Icon="find_in_page"
+                                                Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
+                                            </RadzenStack>
+                                        </RadzenStack>
+                                    </RadzenCard>
+                                    <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
+                                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+                                            <RadzenImage src="images/persona2.png" Style="width: 100px; height: 100px;" />
+                                            <RadzenStack Gap="0">
+                                                <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
+                                                <RadzenButton Text="Contactar" Icon="find_in_page"
+                                                Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
+                                            </RadzenStack>
+                                        </RadzenStack>
+                                    </RadzenCard>
+                                    <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
+                                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+                                            <RadzenImage src="images/persona3.png" Style="width: 100px; height: 100px;" />
+                                            <RadzenStack Gap="0">
+                                                <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
+                                                <RadzenButton Text="Contactar" Icon="find_in_page"
+                                                Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
+                                            </RadzenStack>
+                                        </RadzenStack>
+                                    </RadzenCard>
+                                </div>
                         </div>
                     </RadzenColumn>
                 </RadzenRow>
@@ -91,9 +95,68 @@
     </div>
 </div>
 
+<!-- modal -->
 
+<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplay">
+    <div class="modal-dialog modal-dialog-centered"> <!--custom-modal-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Registrar @NomModal</h5>
+                    <button type="button" class="btn-close" aria-label="Close" @onclick="HideModal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 custom-file"> <!-- body -->
+                        <Prueba_Blazor_2.Componentes.CardPerfil></Prueba_Blazor_2.Componentes.CardPerfil>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="HideModal">Close</button>
+                    <button type="button" Style="background-color: #ffb17a; color: #ffffff;">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Capa de fondo oscuro -->
+<div class="modal-backdrop" style="display: @modalDisplay"></div>
 
 @code {
     [Parameter]
     public string resultado { get; set; }
+
+    private string modalDisplay = "none";
+    private string NomModal = "";
+
+
+    void OnChange(string value, string name)
+    {
+        
+    }
+
+    
+    private void ShowModalHorario()
+    {
+        NomModal = "horario";
+        modalDisplay = "block";
+    }
+    private void HideModal()
+    {
+        modalDisplay = "none";
+    }
+
+    private void ShowModalMateriales()
+    {
+        NomModal = "materiales";
+        modalDisplay = "block";
+    }
+    private void HideModalMateriales()
+    {
+        modalDisplay = "none";
+    }
+
+    private void PreventModalClose()
+    {
+        // No hacemos nada, solo evitamos que el modal se cierre al hacer clic dentro de él
+    }
 }
