@@ -24,7 +24,7 @@
                                             <RadzenImage src="images/persona1.png" Style="width: 100px; height: 100px;" />
                                             <RadzenStack Gap="0">
                                                 <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                                <RadzenButton Text="Contactar" Icon="find_in_page"
+                                                <RadzenButton Text="Perfil" Icon="find_in_page"
                                                 Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" Click="ShowModalHorario"/>
                                             </RadzenStack>
                                         </RadzenStack>
@@ -34,7 +34,7 @@
                                             <RadzenImage src="images/persona2.png" Style="width: 100px; height: 100px;" />
                                             <RadzenStack Gap="0">
                                                 <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                                <RadzenButton Text="Contactar" Icon="find_in_page"
+                                                <RadzenButton Text="Perfil" Icon="find_in_page"
                                                 Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
                                             </RadzenStack>
                                         </RadzenStack>
@@ -44,7 +44,7 @@
                                             <RadzenImage src="images/persona3.png" Style="width: 100px; height: 100px;" />
                                             <RadzenStack Gap="0">
                                                 <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                                <RadzenButton Text="Contactar" Icon="find_in_page"
+                                                <RadzenButton Text="Perfil" Icon="find_in_page"
                                                 Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
                                             </RadzenStack>
                                         </RadzenStack>
@@ -61,7 +61,7 @@
                                             <RadzenImage src="images/persona1.png" Style="width: 100px; height: 100px;" />
                                             <RadzenStack Gap="0">
                                                 <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                                <RadzenButton Text="Contactar" Icon="find_in_page"
+                                                <RadzenButton Text="Aceptar" Icon="find_in_page"
                                                 Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
                                             </RadzenStack>
                                         </RadzenStack>
@@ -71,7 +71,7 @@
                                             <RadzenImage src="images/persona2.png" Style="width: 100px; height: 100px;" />
                                             <RadzenStack Gap="0">
                                                 <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                                <RadzenButton Text="Contactar" Icon="find_in_page"
+                                                <RadzenButton Text="Aceptar" Icon="find_in_page"
                                                 Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
                                             </RadzenStack>
                                         </RadzenStack>
@@ -81,7 +81,7 @@
                                             <RadzenImage src="images/persona3.png" Style="width: 100px; height: 100px;" />
                                             <RadzenStack Gap="0">
                                                 <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                                <RadzenButton Text="Contactar" Icon="find_in_page"
+                                                <RadzenButton Text="Aceptar" Icon="find_in_page"
                                                 Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
                                             </RadzenStack>
                                         </RadzenStack>
@@ -98,22 +98,15 @@
 <!-- modal -->
 
 <div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplay">
-    <div class="modal-dialog modal-dialog-centered"> <!--custom-modal-->
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Registrar @NomModal</h5>
-                    <button type="button" class="btn-close" aria-label="Close" @onclick="HideModal"></button>
+    <div class="modal-dialog" style="max-width: 60%;"> <!--custom-modal-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="mb-3 custom-file"> <!-- body -->
+                    <Prueba_Blazor_2.Componentes.CardPerfil></Prueba_Blazor_2.Componentes.CardPerfil>
                 </div>
-                <div class="modal-body">
-                    <div class="mb-3 custom-file"> <!-- body -->
-                        <Prueba_Blazor_2.Componentes.CardPerfil></Prueba_Blazor_2.Componentes.CardPerfil>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" @onclick="HideModal">Close</button>
-                    <button type="button" Style="background-color: #ffb17a; color: #ffffff;">Save changes</button>
-                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" @onclick="HideModal">Cerrar</button>
             </div>
         </div>
     </div>
