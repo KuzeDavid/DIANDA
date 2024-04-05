@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Prueba Blazor 2",
   "resources": {
-    "hash": "sha256-VH8pouFaSohR48bsnEs514W4qfHsO9GMDr09F131kqc=",
+    "hash": "sha256-A/WOjLtBs+2GLXlzkGeULW00ouEwp1hoWL375mgOAA4=",
     "jsModuleNative": {
       "dotnet.native.8.0.2.h665z9zi19.js": "sha256-gPMK16QWoJSTxorlZJqcVtbBRTniIQWlLsJN2O4cJHg="
     },
@@ -216,10 +216,10 @@
       "mscorlib.wasm": "sha256-OH3kXneWqQMz6CUSo6POZqIeMqn9+5RR+IgHn5TnIwA=",
       "netstandard.wasm": "sha256-ZOswxXEbR2TmqjpbaBEdgr85Bv1NC4GwOwoJ+oxXM3M=",
       "System.Private.CoreLib.wasm": "sha256-I2w0iHf5nvSQyF1YE1VbgdTzmmz6a4OE6J7vo5wFa/4=",
-      "Prueba Blazor 2.wasm": "sha256-CP89EonWDFjVfSY7ewjC3fx1h/yHFEDrsHIqwfba4/E="
+      "Prueba Blazor 2.wasm": "sha256-1wvEd60podnh17YP13/orM4Z9FXs0gA5cm22hxqKaLw="
     },
     "pdb": {
-      "Prueba Blazor 2.pdb": "sha256-3dJBiC4xXwskk+nMzpd2rcz6iQLCP1jVkXmjJVvQ1Lk="
+      "Prueba Blazor 2.pdb": "sha256-YFTa64Pyf52VHgZ+0CiYtAl9et4SIP7Q5+CzjMqORAs="
     }
   },
   "cacheBootResources": true,
