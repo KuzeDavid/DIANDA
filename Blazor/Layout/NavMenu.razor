@@ -1,4 +1,5 @@
-﻿
+﻿@inject NavegacionService navegacionService
+
 <style>
     .icono-radzen {
     vertical-align: middle;
@@ -126,7 +127,9 @@
                     <span>¿Alumno?</span>
                 </label>
             </div>
-
+        </div>
+        <div class="px-3">
+            <input checked="@navegacionService.MostrarImagen" type="checkbox" class="check" id="check1-61" @onchange="ToggleImagen">
         </div>
         
     </nav>
@@ -149,5 +152,10 @@
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+
+    private void ToggleImagen(ChangeEventArgs args)
+    {
+        navegacionService.CambiarMostrarImagen((bool)args.Value);
     }
 }

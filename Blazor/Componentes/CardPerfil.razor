@@ -1,4 +1,5 @@
 @inject NotificationService NotificationService
+@inject NavegacionService navegacionService
 
 
 <RadzenCard Class="rz-my-12 rz-mx-auto" Style="max-width: 90%; width: 90%;">
@@ -32,7 +33,7 @@
             </RadzenColumn>
         </RadzenRow>
     </RadzenCard>
-    @if (!esAlumno){
+    @if (!navegacionService.MostrarImagen){
     <RadzenImage src="images/horario.jpg" style="display:block; margin: 0 auto; border-radius: 2%; height:350px"/> <!-- Remplazar con la del usuario cuando se tenga BD  y solo profes-->
     }
     <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End" Gap="0">
@@ -80,4 +81,17 @@
             sobremi = sobremiNuevoValor;
         }*/
     }
+
+    //Para el control de la imagen
+    protected override void OnInitialized()
+    {
+        navegacionService.OnMostrarImagenChange += ActualizarVisibilidadImagen;
+    }
+
+    private void ActualizarVisibilidadImagen()
+    {
+        StateHasChanged();
+    }
+
+    
 }
