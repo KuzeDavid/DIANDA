@@ -19,36 +19,19 @@
                         <div class="d-flex flex-column justify-content-center align-items-center">
                             <RadzenText TextStyle="TextStyle.H4" Style="color: #ffb17a;">Alumnos inscritos</RadzenText>
                                 <div style="width: 400px; height: 440px; overflow-y: scroll; scrollbar-width: none; ">
-                                    <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
-                                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
-                                            <RadzenImage src="images/persona1.png" Style="width: 100px; height: 100px;" />
-                                            <RadzenStack Gap="0">
-                                                <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                                <RadzenButton Text="Perfil" Icon="find_in_page"
-                                                Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" Click="ShowModalHorario"/>
+                                    @foreach(var alumno in AlumnosInscritos)
+                                    {
+                                        <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
+                                            <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+                                                <RadzenImage src="@alumno.ImagenUrl" Style="width: 100px; height: 100px;" />
+                                                <RadzenStack Gap="0">
+                                                    <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">@alumno.Nombre</RadzenText>
+                                                    <RadzenButton Text="Perfil" Icon="find_in_page"
+                                                    Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" Click="@(() => ShowModalHorario(alumno))"/>
+                                                </RadzenStack>
                                             </RadzenStack>
-                                        </RadzenStack>
-                                    </RadzenCard>
-                                    <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
-                                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
-                                            <RadzenImage src="images/persona2.png" Style="width: 100px; height: 100px;" />
-                                            <RadzenStack Gap="0">
-                                                <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                                <RadzenButton Text="Perfil" Icon="find_in_page"
-                                                Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
-                                            </RadzenStack>
-                                        </RadzenStack>
-                                    </RadzenCard>
-                                    <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
-                                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
-                                            <RadzenImage src="images/persona3.png" Style="width: 100px; height: 100px;" />
-                                            <RadzenStack Gap="0">
-                                                <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                                <RadzenButton Text="Perfil" Icon="find_in_page"
-                                                Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
-                                            </RadzenStack>
-                                        </RadzenStack>
-                                    </RadzenCard>
+                                        </RadzenCard>
+                                    }
                                 </div>
                         </div>
                     </RadzenColumn>
@@ -56,36 +39,19 @@
                         <div class="d-flex flex-column justify-content-center align-items-center">
                             <RadzenText TextStyle="TextStyle.H4" Style="color: #ffb17a;">Solicitud de alumnos</RadzenText>
                                 <div style="width: 400px; height: 440px; overflow-y: scroll; scrollbar-width: none; ">
-                                    <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
-                                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
-                                            <RadzenImage src="images/persona1.png" Style="width: 100px; height: 100px;" />
-                                            <RadzenStack Gap="0">
-                                                <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                                <RadzenButton Text="Aceptar" Icon="find_in_page"
-                                                Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
+                                    @foreach(var solicitud in SolicitudesDeInscripcion)
+                                    {
+                                        <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
+                                            <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+                                                <RadzenImage src="@solicitud.ImagenUrl" Style="width: 100px; height: 100px;" />
+                                                <RadzenStack Gap="0">
+                                                    <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">@solicitud.Nombre</RadzenText>
+                                                    <RadzenButton Text="Aceptar" Icon="find_in_page"
+                                                    Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" Click="@(() => AceptarSolicitud(solicitud))"/>
+                                                </RadzenStack>
                                             </RadzenStack>
-                                        </RadzenStack>
-                                    </RadzenCard>
-                                    <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
-                                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
-                                            <RadzenImage src="images/persona2.png" Style="width: 100px; height: 100px;" />
-                                            <RadzenStack Gap="0">
-                                                <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                                <RadzenButton Text="Aceptar" Icon="find_in_page"
-                                                Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
-                                            </RadzenStack>
-                                        </RadzenStack>
-                                    </RadzenCard>
-                                    <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
-                                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
-                                            <RadzenImage src="images/persona3.png" Style="width: 100px; height: 100px;" />
-                                            <RadzenStack Gap="0">
-                                                <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">Nombre</RadzenText>
-                                                <RadzenButton Text="Aceptar" Icon="find_in_page"
-                                                Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" />
-                                            </RadzenStack>
-                                        </RadzenStack>
-                                    </RadzenCard>
+                                        </RadzenCard>
+                                    }
                                 </div>
                         </div>
                     </RadzenColumn>
@@ -121,6 +87,31 @@
     private string modalDisplay = "none";
     private string NomModal = "";
 
+    private List<Alumno> AlumnosInscritos = new List<Alumno>()
+    {
+        new Alumno(){ Nombre = "Alumno 1", ImagenUrl = "images/persona1.png" },
+        new Alumno(){ Nombre = "Alumno 2", ImagenUrl = "images/persona2.png" },
+        new Alumno(){ Nombre = "Alumno 3", ImagenUrl = "images/persona3.png" }
+    };
+
+    private List<SolicitudInscripcion> SolicitudesDeInscripcion = new List<SolicitudInscripcion>()
+    {
+        new SolicitudInscripcion(){ Nombre = "Solicitud 1", ImagenUrl = "images/persona1.png" },
+        new SolicitudInscripcion(){ Nombre = "Solicitud 2", ImagenUrl = "images/persona2.png" },
+        new SolicitudInscripcion(){ Nombre = "Solicitud 3", ImagenUrl = "images/persona3.png" }
+    };
+
+    class Alumno
+    {
+        public string Nombre { get; set; }
+        public string ImagenUrl { get; set; }
+    }
+
+    class SolicitudInscripcion
+    {
+        public string Nombre { get; set; }
+        public string ImagenUrl { get; set; }
+    }
 
     void OnChange(string value, string name)
     {
@@ -128,24 +119,20 @@
     }
 
     
-    private void ShowModalHorario()
+    private void ShowModalHorario(Alumno alumno)
     {
         NomModal = "horario";
         modalDisplay = "block";
+        // Aquí puedes hacer algo con el alumno seleccionado si es necesario
     }
     private void HideModal()
     {
         modalDisplay = "none";
     }
 
-    private void ShowModalMateriales()
+    private void AceptarSolicitud(SolicitudInscripcion solicitud)
     {
-        NomModal = "materiales";
-        modalDisplay = "block";
-    }
-    private void HideModalMateriales()
-    {
-        modalDisplay = "none";
+        // Aquí puedes realizar alguna acción cuando se acepta la solicitud de inscripción
     }
 
     private void PreventModalClose()
