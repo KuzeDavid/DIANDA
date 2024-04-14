@@ -87,7 +87,7 @@
                 <div><RadzenIcon class="icono-radzen" Icon="assignment" /><span>Formulario</span></div>
             </NavLink>
         </div>
-        @if (!navegacionService.MostrarImagen)
+        @if (!navegacionService.Alumno)
         {
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="HorarioyMateriales">
@@ -100,6 +100,13 @@
             </NavLink>
         </div>
         }   
+        @if(navegacionService.Alumno){
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/Tutores">
+                <div><RadzenIcon class="icono-radzen" Icon="done" /><span>Tutores</span></div>
+            </NavLink>
+        </div>
+        }
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="Perfil">
                 <div><RadzenIcon class="icono-radzen" Icon="account_circle" /><span>Perfil</span></div>
@@ -116,7 +123,7 @@
         -->
         <div class="px-3">
             <div class="checkbox-wrapper">
-                <input checked="@navegacionService.MostrarImagen" type="checkbox" class="check" id="check1-61" @onchange="ToggleImagen">
+                <input checked="@navegacionService.Alumno" type="checkbox" class="check" id="check1-61" @onchange="ToggleImagen">
                 <label for="check1-61" class="label">
                     <svg width="45" height="45" viewBox="0 0 95 95">
                     <rect x="30" y="20" width="50" height="50" stroke="black" fill="none"></rect>
