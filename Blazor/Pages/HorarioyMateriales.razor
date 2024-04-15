@@ -102,6 +102,14 @@
   transform: scaleX(1);
 }
 
+/*Modal sin lineas*/
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+    border: none; /* Elimina el borde */
+    margin: 10px; 
+    padding: 0; 
+    }
 </style>
 
 
@@ -129,14 +137,10 @@
 
                 <!-- HORARIOS -->
 <!-- Modal de horario-->
-<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplay">
+<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplay; margin-left: 7%;">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Registrar @NomModal</h5>
-          <button type="button" class="btn-close" aria-label="Close" @onclick="HideModal"></button>
-        </div>
         <div class="modal-body">
           <div class="mb-3 custom-file">
             @if (NomModal == "horario")
@@ -169,8 +173,8 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" @onclick="HideModal">Close</button>
-          <button type="button" Style="background-color: #ffb17a; color: #ffffff;">Save changes</button>
+          <button type="button" class="btn btn-secondary" @onclick="HideModal">Cerrar</button>
+          <button type="button" Style="background-color: #ffb17a; color: #ffffff;">Guardar</button>
         </div>
       </div>
     </div>

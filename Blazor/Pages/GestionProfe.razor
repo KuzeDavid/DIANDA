@@ -4,11 +4,21 @@
 <head>
     <link rel="stylesheet" href="css/DiandaStyle.css" />
 </head>
+<style>
+    /*Modal sin lineas*/
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+    border: none; /* Elimina el borde */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    }
+</style>
+
 <div class="contenedor">
     <RadzenText TextStyle="TextStyle.H6" Style="color: #ffffff;">TU ESTILO DE APRENDIZAJE ES:</RadzenText>
     <RadzenText TextStyle="TextStyle.H3" Style="color: #ffb17a;"><strong>VISUAL @resultado</strong></RadzenText>
 </div>
-
 
 <div class="d-flex justify-content-center align-items-center" style="width: 100%; height: 80vh;">
     <div class="container">
@@ -63,7 +73,7 @@
 
 <!-- modal -->
 
-<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplay">
+<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplay; margin-left: 7%;">
     <div class="modal-dialog modal-dialog-centered" style="max-width: 60%;"> <!--custom-modal-->
         <div class="modal-content">
             <div class="modal-body">
@@ -82,7 +92,7 @@
                     <button type="button" class="btn btn-secondary" @onclick="HideModal">Cerrar</button>
                 }
                 else if (NomModal == "aceptarSol"){
-                    <button type="button" class="btn btn-secondary" @onclick="HideModal">Aceptar</button> //Solo esconde el modal, se debera crear una nueva funcion para la logica de aceptar
+                    <button type="button" class="btn btn-secondary" Style="background-color: #ffb17a; color: #ffffff;" @onclick="HideModal">Aceptar</button> //Solo esconde el modal, se debera crear una nueva funcion para la logica de aceptar
                 }
             </div>
         </div>

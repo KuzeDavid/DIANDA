@@ -4,11 +4,22 @@
 <head>
     <link rel="stylesheet" href="css/DiandaStyle.css" />
 </head>
+
+<style>
+    /*Modal sin lineas*/
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+    border: none; /* Elimina el borde */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    }
+</style>
+
 <div class="contenedor">
     <RadzenText TextStyle="TextStyle.H6" Style="color: #ffffff;">Estos son tus</RadzenText>
     <RadzenText TextStyle="TextStyle.H3" Style="color: #ffb17a;"><strong>TUTORES</strong></RadzenText>
 </div>
-
 
 <div class="d-flex justify-content-center align-items-center" style="width: 100%; max-width:100%; height: 80vh;">
     <RadzenRow Gap="0" Class="rz-my-12 rz-border-radius-6 rz-shadow-10 d-flex flex-column justify-content-center align-items-center" Style="width: 520px; overflow: hidden;">   
@@ -33,7 +44,7 @@
 
 <!-- modal -->
 
-<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplay">
+<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplay; margin-left: 7%;">
     <div class="modal-dialog modal-dialog-centered" style="max-width: 60%;"> <!--custom-modal-->
         <div class="modal-content">
             <div class="modal-body">
