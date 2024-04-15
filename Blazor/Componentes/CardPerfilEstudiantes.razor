@@ -33,6 +33,9 @@
             </RadzenColumn>
         </RadzenRow>
     </RadzenCard>
+    @if (navegacionService.Alumno){
+    <RadzenImage src="images/horario.jpg" style="display:block; margin: 0 auto; border-radius: 2%; height:350px"/> <!-- Remplazar con la del usuario cuando se tenga BD  y solo profes-->
+    }
 </RadzenCard>
 
 
@@ -43,5 +46,12 @@
     private string apodo = "Kuze";
     private string sobremi = "Me gustan los gatitos, apex legends y el genero de terro en las peliculas";
 
-
+    protected override void OnInitialized()
+    {
+        navegacionService.OnMostrarImagenChange += ActualizarVisibilidadImagen;
+    }
+    private void ActualizarVisibilidadImagen()
+    {
+        StateHasChanged();
+    }
 }
