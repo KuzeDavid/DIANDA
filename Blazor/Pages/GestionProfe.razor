@@ -1,5 +1,4 @@
 @page "/GestionProfe"
-@inject NotificationService NotificationService
 
 <PageTitle>Gestion para profesores</PageTitle>
 <head>
@@ -189,7 +188,7 @@
     }
 
     private async Task AceptarAlumno(){
-        NotificationService.Notify(NotificationSeverity.Success, "Alumno aceptado");
+        //Aqui debe ir el codigo de notificacion
         animationClass = "fade-out"; // Aplicamos la clase de animación de fade-out
         await Task.Delay(500); // Esperamos el tiempo de duración de la animación
         modalDisplay = "none";

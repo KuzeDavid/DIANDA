@@ -1,5 +1,4 @@
 @page "/HorarioyMateriales"
-@inject NotificationService NotificationService
 
 <head>
     <link rel="stylesheet" href="css/DiandaStyle.css" />
@@ -209,7 +208,6 @@
     
     private async Task ShowModalHorario()
     {
-      NotificationService.Notify(NotificationSeverity.Success, "Alumno aceptado");
       NomModal = "horario";
       modalDisplay = "block";
       await Task.Delay(50); // Pequeño retraso para permitir que el DOM se actualice
