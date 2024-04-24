@@ -9454,7 +9454,6 @@ c:\Users\Kuze\Desktop\TT2\DIANDA\Blazor\obj\Debug\net8.0\Prueba Blazor 2.dll
 c:\Users\Kuze\Desktop\TT2\DIANDA\Blazor\obj\Debug\net8.0\refint\Prueba Blazor 2.dll
 c:\Users\Kuze\Desktop\TT2\DIANDA\Blazor\obj\Debug\net8.0\Prueba Blazor 2.pdb
 c:\Users\Kuze\Desktop\TT2\DIANDA\Blazor\obj\Debug\net8.0\ref\Prueba Blazor 2.dll
-c:\Users\Kuze\Desktop\TT2\DIANDA\Blazor\obj\Debug\net8.0\scopedcss\Login\Registro.razor.rz.scp.css
 E:\Descargas\DIANDA\blazor\bin\Debug\net8.0\wwwroot\_framework\blazor.webassembly.js
 E:\Descargas\DIANDA\blazor\bin\Debug\net8.0\wwwroot\_framework\dotnet.js
 E:\Descargas\DIANDA\blazor\bin\Debug\net8.0\wwwroot\_framework\dotnet.js.map

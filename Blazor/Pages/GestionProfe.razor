@@ -1,4 +1,5 @@
 @page "/GestionProfe"
+@inject NotificationService NotificationService
 
 <PageTitle>Gestion para profesores</PageTitle>
 <head>
@@ -10,8 +11,19 @@
     .modal-body,
     .modal-footer {
     border: none; /* Elimina el borde */
-    margin: 0; /* Elimina el margen */
+    margin: 10px; /* Elimina el margen */
     padding: 0; /* Elimina el relleno */
+    }
+
+    /*Animar*/
+    .fade-in {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .fade-out {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
     }
 </style>
 
@@ -48,21 +60,21 @@
                     <RadzenColumn Size="12" SizeMD="6" >
                         <div class="d-flex flex-column justify-content-center align-items-center">
                             <RadzenText TextStyle="TextStyle.H4" Style="color: #ffb17a;">Solicitud de alumnos</RadzenText>
-                                <div style="width: 400px; height: 440px; overflow-y: scroll; scrollbar-width: none; ">
-                                    @foreach(var solicitud in SolicitudesDeInscripcion)
-                                    {
-                                    <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
-                                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
-                                            <RadzenImage src="@solicitud.ImagenUrl" Style="width: 100px; height: 100px;" />
-                                            <RadzenStack Gap="0">
-                                                <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">@solicitud.Nombre</RadzenText>
-                                                <RadzenButton Text="Aceptar" Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" 
-                                                Click="@(() => AceptarSolicitud(solicitud))"/>
-                                            </RadzenStack>
+                            <div style="width: 400px; height: 440px; overflow-y: scroll; scrollbar-width: none; ">
+                                @foreach(var solicitud in SolicitudesDeInscripcion)
+                                {
+                                <RadzenCard Variant="Variant.Filled" Class="rz-my-12 rz-mx-auto" Style="background-color: #ffb17a; max-width: 650px">
+                                    <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+                                        <RadzenImage src="@solicitud.ImagenUrl" Style="width: 100px; height: 100px;" />
+                                        <RadzenStack Gap="0">
+                                            <RadzenText TextStyle="TextStyle.H5" Style="color: #ffffff;">@solicitud.Nombre</RadzenText>
+                                            <RadzenButton Text="Aceptar" Style="background-color: #ffb17a; color: #000000;" TextStyle="color: #ffffff;" 
+                                            Click="@(() => AceptarSolicitud(solicitud))"/>
                                         </RadzenStack>
-                                    </RadzenCard>
-                                    }
-                                </div>
+                                    </RadzenStack>
+                                </RadzenCard>
+                                }
+                            </div>
                         </div>
                     </RadzenColumn>
                 </RadzenRow>
@@ -73,11 +85,11 @@
 
 <!-- modal -->
 
-<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplay; margin-left: 7%;">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 60%;"> <!--custom-modal-->
+<div class="modal @(animationClass)" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplay; margin-left: 7%;">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: @(anchura);"> <!--custom-modal-->
         <div class="modal-content">
             <div class="modal-body">
-                <div class="mb-3 custom-file"> <!-- body -->
+                <div class="mb-3"> <!-- body -->
                     @if(NomModal=="infoProf"){
                         <Prueba_Blazor_2.Componentes.CardPerfilEstudiantes/>
                     }
@@ -92,14 +104,15 @@
                     <button type="button" class="btn btn-secondary" @onclick="HideModal">Cerrar</button>
                 }
                 else if (NomModal == "aceptarSol"){
-                    <button type="button" class="btn btn-secondary" Style="background-color: #ffb17a; color: #ffffff;" @onclick="HideModal">Aceptar</button> //Solo esconde el modal, se debera crear una nueva funcion para la logica de aceptar
+                    <button type="button" class="btn btn-secondary" @onclick="HideModal">Cancelar</button>
+                    <button type="button" class="btn btn-secondary" Style="background-color: #ffb17a; color: #ffffff;" @onclick="AceptarAlumno">Aceptar</button> //Solo esconde el modal, se debera crear una nueva funcion para la logica de aceptar
                 }
             </div>
         </div>
     </div>
 </div>
 <!-- Capa de fondo oscuro -->
-<div class="modal-backdrop" style="display: @modalDisplay"></div>
+<div class="modal-backdrop @(animationClass)" style="display: @modalDisplay"></div>
 
 @code {
     [Parameter]
@@ -107,6 +120,8 @@
 
     private string modalDisplay = "none";
     private string NomModal = "";
+    private string animationClass = "";
+    private string anchura = "";
 
     private List<Alumno> AlumnosInscritos = new List<Alumno>()
     {
@@ -140,25 +155,43 @@
     }
 
     
-    private void ShowModalHorario(Alumno alumno)
+    private async Task ShowModalHorario(Alumno alumno)
     {
         NomModal = "infoProf";
+        anchura = "60%";
         modalDisplay = "block";
-        // Aquí puedes hacer algo con el alumno seleccionado si es necesario
+        await Task.Delay(50); // Pequeño retraso para permitir que el DOM se actualice
+        animationClass = "fade-in"; // Aplicamos la clase de animación de fade-in
+        // Aquí hacer algo con el alumno seleccionado si es necesario
     }
-    private void HideModal()
-    {
-        modalDisplay = "none";
-    }
-
-    private void AceptarSolicitud(SolicitudInscripcion solicitud)
+    private async Task AceptarSolicitud(SolicitudInscripcion solicitud)
     {
         NomModal = "aceptarSol";
+        anchura = "35%";
         modalDisplay = "block";
+        await Task.Delay(50); // Pequeño retraso para permitir que el DOM se actualice
+        animationClass = "fade-in"; // Aplicamos la clase de animación de fade-in
     }
-
+    private async Task HideModal()
+    {
+        animationClass = "fade-out"; // Aplicamos la clase de animación de fade-out
+        await Task.Delay(500); // Esperamos el tiempo de duración de la animación
+        modalDisplay = "none";
+    }
+    protected override void OnInitialized()
+    {
+        animationClass = "fade-out"; //Prevenir la ausencia del primer fade-in en modales
+    }
+    
     private void PreventModalClose()
     {
         // No hacemos nada, solo evitamos que el modal se cierre al hacer clic dentro de él
+    }
+
+    private async Task AceptarAlumno(){
+        NotificationService.Notify(NotificationSeverity.Success, "Alumno aceptado");
+        animationClass = "fade-out"; // Aplicamos la clase de animación de fade-out
+        await Task.Delay(500); // Esperamos el tiempo de duración de la animación
+        modalDisplay = "none";
     }
 }

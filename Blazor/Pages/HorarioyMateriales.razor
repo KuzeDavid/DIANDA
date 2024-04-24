@@ -1,12 +1,11 @@
 @page "/HorarioyMateriales"
+@inject NotificationService NotificationService
 
 <head>
     <link rel="stylesheet" href="css/DiandaStyle.css" />
 </head>
 
 <style>
-
-
 
 /* file input modal*/
   .custum-file-upload {
@@ -110,6 +109,18 @@
     margin: 10px; 
     padding: 0; 
     }
+
+/*Animar*/
+    .fade-in {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .fade-out {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
 </style>
 
 
@@ -137,11 +148,11 @@
 
                 <!-- HORARIOS -->
 <!-- Modal de horario-->
-<div class="modal" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplay; margin-left: 7%;">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
+<div class="modal @(animationClass)" tabindex="-1" @onclick="PreventModalClose" style="display: @modalDisplay; margin-left: 7%;">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-dialog ">
+      <div class="modal-content ">
+        <div class="modal-body ">
           <div class="mb-3 custom-file">
             @if (NomModal == "horario")
             {
@@ -181,12 +192,13 @@
   </div>
 </div>
 <!-- Capa de fondo oscuro -->
-<div class="modal-backdrop" style="display: @modalDisplay"></div>
+<div class="modal-backdrop @(animationClass)" style="display: @modalDisplay"></div>
 
 
 @code {
     private string modalDisplay = "none";
     private string NomModal = "";
+    private string animationClass = "";
 
 
     void OnChange(string value, string name)
@@ -195,28 +207,36 @@
     }
 
     
-    private void ShowModalHorario()
+    private async Task ShowModalHorario()
     {
-        NomModal = "horario";
-        modalDisplay = "block";
+      NotificationService.Notify(NotificationSeverity.Success, "Alumno aceptado");
+      NomModal = "horario";
+      modalDisplay = "block";
+      await Task.Delay(50); // Pequeño retraso para permitir que el DOM se actualice
+      animationClass = "fade-in"; // Aplicamos la clase de animación de fade-in
     }
-    private void HideModal()
+    private async Task ShowModalMateriales()
     {
-        modalDisplay = "none";
+      NomModal = "materiales";
+      modalDisplay = "block";
+      await Task.Delay(50); // Pequeño retraso para permitir que el DOM se actualice
+      animationClass = "fade-in"; // Aplicamos la clase de animación de fade-in
+    }
+    private async Task HideModal()
+    {
+      animationClass = "fade-out"; // Aplicamos la clase de animación de fade-out
+      await Task.Delay(500); // Esperamos el tiempo de duración de la animación
+      modalDisplay = "none"; // Ocultamos el modal después de la animación
     }
 
-    private void ShowModalMateriales()
+    protected override void OnInitialized()
     {
-        NomModal = "materiales";
-        modalDisplay = "block";
+        animationClass = "fade-out"; //Prevenir la ausencia del primer fade-in en modales
     }
-    private void HideModalMateriales()
-    {
-        modalDisplay = "none";
-    }
-
+    
     private void PreventModalClose()
     {
         // No hacemos nada, solo evitamos que el modal se cierre al hacer clic dentro de él
     }
+
 }
