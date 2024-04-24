@@ -1,4 +1,6 @@
 @page "/GestionProfe"
+@inject IToastService toastService
+@using Blazored.Toast.Configuration
 
 <PageTitle>Gestion para profesores</PageTitle>
 <head>
@@ -113,6 +115,12 @@
 <!-- Capa de fondo oscuro -->
 <div class="modal-backdrop @(animationClass)" style="display: @modalDisplay"></div>
 
+<button class="btn btn-info" @onclick="@(() => toastService.ShowInfo("I'm an INFO message"))">Info Toast</button>
+<button class="btn btn-success" @onclick="@(() => toastService.ShowSuccess("I'm a SUCCESS message with a custom title"))">Success Toast</button>
+<button class="btn btn-warning" @onclick="@(() => toastService.ShowWarning("I'm a WARNING message"))">Warning Toast</button>
+<button class="btn btn-danger" @onclick="@(() => toastService.ShowError("I'm an ERROR message"))">Error Toast</button>
+
+
 @code {
     [Parameter]
     public string resultado { get; set; }
@@ -188,7 +196,6 @@
     }
 
     private async Task AceptarAlumno(){
-        //Aqui debe ir el codigo de notificacion
         animationClass = "fade-out"; // Aplicamos la clase de animación de fade-out
         await Task.Delay(500); // Esperamos el tiempo de duración de la animación
         modalDisplay = "none";

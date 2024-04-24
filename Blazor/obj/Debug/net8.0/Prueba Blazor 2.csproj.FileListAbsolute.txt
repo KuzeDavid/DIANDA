@@ -10527,3 +10527,8 @@ E:\Descargas\DIANDA\blazor\obj\Debug\net8.0\Prueba Blazor 2.dll
 E:\Descargas\DIANDA\blazor\obj\Debug\net8.0\refint\Prueba Blazor 2.dll
 E:\Descargas\DIANDA\blazor\obj\Debug\net8.0\Prueba Blazor 2.pdb
 E:\Descargas\DIANDA\blazor\obj\Debug\net8.0\ref\Prueba Blazor 2.dll
+c:\Users\Kuze\Desktop\TT2\DIANDA\Blazor\bin\Debug\net8.0\wwwroot\_framework\Blazored.Toast.wasm
+c:\Users\Kuze\Desktop\TT2\DIANDA\Blazor\bin\Debug\net8.0\wwwroot\_framework\Blazored.Toast.wasm.gz
+c:\Users\Kuze\Desktop\TT2\DIANDA\Blazor\bin\Debug\net8.0\Blazored.Toast.dll
+c:\Users\Kuze\Desktop\TT2\DIANDA\Blazor\obj\Debug\net8.0\webcil\Blazored.Toast.wasm
+c:\Users\Kuze\Desktop\TT2\DIANDA\Blazor\obj\Debug\net8.0\compressed\vezexh1qaq.gz

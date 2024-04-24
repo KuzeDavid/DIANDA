@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pblUllbcXyZ5FQqP+6RAoPzwi1s78yumADFs+RXbNUjgrkhHVwwQ/YGrFfNLfgBwFpf9fGtTJjqJ8pW0b+WTgw==",
+  "dgSpecHash": "9c5sUzZOOA8rptvSxTY4y66OkHhNKkDC9dqp+LTLAccl93Lo7SJJg1CN5gYdw4x9wdTjChCZ++GC/W7Ik29adQ==",
   "success": true,
   "projectFilePath": "c:\\Users\\Kuze\\Desktop\\TT2\\DIANDA\\Blazor\\Prueba Blazor 2.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Kuze\\.nuget\\packages\\blazored.toast\\4.2.1\\blazored.toast.4.2.1.nupkg.sha512",
     "C:\\Users\\Kuze\\.nuget\\packages\\blazorise\\1.4.1\\blazorise.1.4.1.nupkg.sha512",
     "C:\\Users\\Kuze\\.nuget\\packages\\blazorise.bootstrap\\1.4.1\\blazorise.bootstrap.1.4.1.nupkg.sha512",
     "C:\\Users\\Kuze\\.nuget\\packages\\blazorise.icons.fontawesome\\1.4.1\\blazorise.icons.fontawesome.1.4.1.nupkg.sha512",

@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Blazored.Toast": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
             "Blazorise.Bootstrap": {
               "target": "Package",
               "version": "[1.4.1, )"
