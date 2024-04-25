@@ -106,7 +106,8 @@
                 }
                 else if (NomModal == "aceptarSol"){
                     <button type="button" class="btn btn-secondary" @onclick="HideModal">Cancelar</button>
-                    <button type="button" class="btn btn-secondary" Style="background-color: #ffb17a; color: #ffffff;" @onclick="AceptarAlumno">Aceptar</button> //Solo esconde el modal, se debera crear una nueva funcion para la logica de aceptar
+                    <button type="button" class="btn btn-secondary" Style="background-color: #ffb17a; color: #ffffff;" 
+                    @onclick="AceptarAlumno">Aceptar</button> //Solo esconde el modal, se debera crear una nueva funcion para la logica de aceptar
                 }
             </div>
         </div>
@@ -114,11 +115,6 @@
 </div>
 <!-- Capa de fondo oscuro -->
 <div class="modal-backdrop @(animationClass)" style="display: @modalDisplay"></div>
-
-<button class="btn btn-info" @onclick="@(() => toastService.ShowInfo("I'm an INFO message"))">Info Toast</button>
-<button class="btn btn-success" @onclick="@(() => toastService.ShowSuccess("I'm a SUCCESS message with a custom title"))">Success Toast</button>
-<button class="btn btn-warning" @onclick="@(() => toastService.ShowWarning("I'm a WARNING message"))">Warning Toast</button>
-<button class="btn btn-danger" @onclick="@(() => toastService.ShowError("I'm an ERROR message"))">Error Toast</button>
 
 
 @code {
@@ -196,8 +192,10 @@
     }
 
     private async Task AceptarAlumno(){
+        toastService.ShowSuccess("Alumno aceptado correctamente!");
         animationClass = "fade-out"; // Aplicamos la clase de animación de fade-out
         await Task.Delay(500); // Esperamos el tiempo de duración de la animación
         modalDisplay = "none";
+        
     }
 }
